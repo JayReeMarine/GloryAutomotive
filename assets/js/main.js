@@ -72,7 +72,11 @@
 				});
 
 
+
+		
 		// customise javascript features
+		// Created By: Jaeyun Ree
+
 		// 1. Banner image slider
 		var imageList = [
 			"images/general_auto1.jpg",
