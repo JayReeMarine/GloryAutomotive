@@ -3521,7 +3521,16 @@ input, select, textarea {
 			}
 
 	}
-
+	
+	/* keyboard :focus */
+	a:focus,
+	button:focus,
+	input:focus,
+	textarea:focus {
+	  outline: 3px solid #007BB0;
+	  outline-offset: 2px;
+	}
+	
 /* Small */
 
 	@media screen and (max-width: 360px) {
