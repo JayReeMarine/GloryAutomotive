@@ -78,6 +78,8 @@
 		// Created By: Jaeyun Ree
 
 		// 1. Banner image slider
+
+		// Index images
 		var imageList = [
 			"images/general_auto1.jpg",
 			"images/general_auto2.jpg",
@@ -87,25 +89,55 @@
 			"images/general_auto6.jpg"
 		];
 
+		// Service images
+		  var serviceImageList = [
+			"images/service1.jpg",
+			"images/service2.jpg",
+			"images/service3.jpg",
+			"images/service4.jpg",
+			"images/service5.jpg",
+			"images/service6.jpg",
+			"images/service7.jpg",
+			"images/service8.jpg",
+		];
+
 		var currentIndex = 0;
 		var $bannerImage = $(".right-layout img");
 
-		function updateImage(index) {
+		function updateIndexImage(index) {
 			$bannerImage.fadeOut(300, function () {
 				$bannerImage.attr("src", imageList[index]).fadeIn(300);
 			});
 		}
 
+		function updateServiceImage(index) {
+			$bannerImage.fadeOut(300, function () {
+				$bannerImage.attr("src", serviceImageList[index]).fadeIn(300);
+			});
+		}
+
+		$(".service-right-arrow").click(function (e) {
+			e.preventDefault();
+			currentIndex = (currentIndex + 1) % serviceImageList.length;
+			updateServiceImage(currentIndex);
+		});
+
+		$(".service-left-arrow").click(function (e) {
+			e.preventDefault();
+			currentIndex = (currentIndex - 1 + serviceImageList.length) % serviceImageList.length;
+			updateServiceImage(currentIndex);
+		});
+
 		$(".right-arrow").click(function (e) {
 			e.preventDefault();
 			currentIndex = (currentIndex + 1) % imageList.length;
-			updateImage(currentIndex);
+			updateIndexImage(currentIndex);
 		});
 
 		$(".left-arrow").click(function (e) {
 			e.preventDefault();
 			currentIndex = (currentIndex - 1 + imageList.length) % imageList.length;
-			updateImage(currentIndex);
+			updateIndexImage(currentIndex);
 		});
 
 		// 2. brand logo slider
