@@ -220,7 +220,7 @@ input, select, textarea {
 	.container {
 		margin: 0 auto;
 		max-width: 100%;
-		width: 120em;
+		width: 90em;
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -2747,6 +2747,7 @@ input, select, textarea {
 	#services-section {
 		padding: 3em 0.5em;
 		margin-top: 4em;
+		
 	}
 	
 	.service-grid {
