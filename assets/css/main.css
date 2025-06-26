@@ -220,7 +220,7 @@ input, select, textarea {
 	.container {
 		margin: 0 auto;
 		max-width: 100%;
-		width: 64em;
+		width: 120em;
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -2591,8 +2591,8 @@ input, select, textarea {
 	}
 
 	#banner .right-layout img {
-		width: 120%;
-		max-width: 470px;
+		width: 100%;
+		max-width: 500px;
 		border-radius: 15px;
 	}
 
@@ -2601,7 +2601,7 @@ input, select, textarea {
 		top: 50%;
 		transform: translateY(-50%);
 		color: #fff;
-		width: 40px;
+		width: 100px;
 		height: 40px;
 		display: flex;
 		justify-content: center;
@@ -2751,8 +2751,8 @@ input, select, textarea {
 	
 	.service-grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-		gap: 1.5em;
+		grid-template-columns: repeat(5, 1fr); /* Exactly 5 columns */
+		gap: 2.5em; /* Increased spacing between cards */
 	}
 	
 	.service-card {
