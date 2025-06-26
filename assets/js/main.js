@@ -79,12 +79,12 @@
 
 		// 1. Banner image slider
 		var imageList = [
-			"images/general_auto1.jpg",
-			"images/general_auto2.jpg",
-			"images/general_auto3.jpg",
-			"images/general_auto4.jpg",
-			"images/general_auto5.jpg",
-			"images/general_auto6.jpg"
+			"images/glory_auto1.jpg",
+			"images/glory_auto2.jpg",
+			"images/glory_auto3.jpg",
+			"images/glory_auto4.jpg",
+			"images/glory_auto5.jpg",
+			"images/glory_auto6.jpg"
 		];
 
 		var currentIndex = 0;
