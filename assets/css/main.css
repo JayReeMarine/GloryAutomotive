@@ -3174,6 +3174,17 @@ input, select, textarea {
 		font-size: 1em;
 		box-sizing: border-box;
 	  }
+
+	.contact-form input:focus,
+	.contact-form textarea:focus,
+	.contact-form select:focus {
+		outline: none;
+		box-shadow: 0 0 0 3px rgba(0, 119, 204, 0.3); /* Custom blue glow */
+		border: 3px solid #0077cc; /* Match your blue border */
+	}
+
+	
+
 	  
 	  .contact-form select,
 	  .contact-form textarea {
@@ -3212,6 +3223,16 @@ input, select, textarea {
 		gap: 0.8em;
 		margin-bottom: 1em;
 	  }
+
+	input:-webkit-autofill,
+	textarea:-webkit-autofill,
+	select:-webkit-autofill {
+	box-shadow: 0 0 0px 1000px #fff inset !important;
+	-webkit-box-shadow: 0 0 0px 1000px #fff inset !important;
+	-webkit-text-fill-color: #000 !important;
+	border: 1px solid #ccc !important;
+	transition: background-color 9999s ease-in-out 0s !important;
+	}
 	  
 	  /* Responsive */
 	  @media (max-width: 768px) {
@@ -3737,3 +3758,17 @@ input, select, textarea {
 			}
 
 	}
+
+	input:-webkit-autofill,
+	textarea:-webkit-autofill,
+	select:-webkit-autofill {
+		box-shadow: 0 0 0px 1000px white inset !important;
+		-webkit-box-shadow: 0 0 0px 1000px white inset !important;
+		-webkit-text-fill-color: #000 !important;
+		transition: background-color 5000s ease-in-out 0s;
+	}
+
+	input:-webkit-autofill:focus {
+		border: 3px solid #0077cc !important;
+		box-shadow: 0 0 0 3px rgba(0, 119, 204, 0.3) !important;
+	  }
