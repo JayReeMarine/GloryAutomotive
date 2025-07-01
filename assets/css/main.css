@@ -3182,10 +3182,6 @@ input, select, textarea {
 		box-shadow: 0 0 0 3px rgba(0, 119, 204, 0.3); /* Custom blue glow */
 		border: 3px solid #0077cc; /* Match your blue border */
 	}
-
-	
-
-	  
 	  .contact-form select,
 	  .contact-form textarea {
 		max-width: 100%;
