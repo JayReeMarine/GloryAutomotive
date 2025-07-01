@@ -3028,7 +3028,48 @@ input, select, textarea {
 	.footer-links li:not(:last-child) {
 		margin-bottom: 0.7em;
 	  }
-	  
+	
+	/* About Us Horizontal Layout */
+	.about-horizontal-container {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 3em;
+		margin-top: 3em;
+	}
+
+	.about-horizontal-container h3 {
+		font-size: 1.8em;
+		margin-bottom: 1em;
+		color: #333;
+	}
+
+	.about-column {
+		flex: 1 1 45%;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		padding: 2em;
+		border-radius: 15px;
+		background-color: #fff;
+	}
+
+	.about-column:hover {
+		border-color: #005099; /* darker blue border */
+		box-shadow: 0 0 25px rgba(0, 80, 153, 0.7); /* darker, denser blue shadow */
+	}
+
+	.about-image {
+		width: 100%;
+		height: auto;
+		border-radius: 10px;
+		margin-bottom: 1em;
+		object-fit: cover;
+	}
+
+	/* Responsive: Stack vertically on small screens */
+	@media screen and (max-width: 768px) {
+		.about-horizontal-container {
+			flex-direction: column;
+		}
+	}
   
 
 /* XLarge */
