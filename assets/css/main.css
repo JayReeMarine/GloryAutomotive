@@ -3111,23 +3111,29 @@ input, select, textarea {
 	  .contact-info-text h2 {
 		font-size: 2em;
 		margin-bottom: 0.5em;
+		color: #333333;
 	  }
 	  
 	  .contact-info-list {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 1.2em 1.5em; /* Closer vertical and horizontal gap */
 		list-style: none;
 		padding: 0;
-		margin: 1em 0;
+		margin: 1.5em 0;
 	  }
 	  
 	  .contact-info-list li {
-		margin-bottom: 1em;
-		font-size: 1.1em;
 		display: flex;
-		align-items: center;
+		align-items: center;  
+		gap: 0.6em;
+		font-size: 1.1em;
+		margin-bottom: 0.5em;
+		color: #333333; 
 	  }
 	  
 	  .contact-info-list i {
-		color: #0077cc;
+		color: #333333;
 		font-size: 1.3em;
 		margin-right: 0.6em;
 	  }
@@ -3147,6 +3153,7 @@ input, select, textarea {
 		padding: 2em;
 		border-radius: 12px;
 		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+		margin-top: 3em;
 	  }
 	  
 	  .form-row {
