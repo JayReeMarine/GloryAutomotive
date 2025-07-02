@@ -3250,14 +3250,34 @@ input, select, textarea {
 		gap: 3em;
 	}
 	.services-nav {
-		flex: 0 0 220px;
 		position: sticky;
-		top: 100px;
-	}
+		top: 100px; 
+		align-self: flex-start; 
+		background-color: #fff; 
+		padding: 1em;
+		border-radius: 10px;
+		box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+	  }
 	.services-nav ul {
 		list-style: none;
 		padding: 0;
 	}
+
+	.services-nav ul li a {
+		color: #000; 
+		text-decoration: none;
+		font-weight: normal; 
+		transition: color 0.3s, font-weight 0.3s;
+	}
+
+	.services-nav ul li a.active {
+		border-left: 4px solid #0077cc;
+		padding-left: 0.5em;
+		font-weight: bold; 
+		color: #000; 
+		transition: all 0.2s ease-in-out;
+	}
+
 	.services-nav li {
 		margin-bottom: 1em;
 	}
@@ -3268,7 +3288,7 @@ input, select, textarea {
 		transition: color 0.3s;
 	}
 	.services-nav a:hover {
-		color: #005fa3;
+		color: #0077cc;
 	}
 	.services-content {
 		flex: 1;
