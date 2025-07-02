@@ -89,7 +89,7 @@
                     <input type="date" name="date">
                     </div>
                     <div class="form-row">
-                        <select name="enquiry" required>
+                        <select id="enquiry-select" name="enquiry" required>
                             <option value="">Select Enquiry Type *</option>
                             <option value="general">General Enquiry</option>
                             <option value="logbook">Logbook Servicing</option>
@@ -157,6 +157,19 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+            <script src="assets/js/services.js"></script>
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                const params = new URLSearchParams(window.location.search);
+                const enquiryType = params.get('enquiry');
+
+                if (enquiryType) {
+                    const select = document.getElementById('enquiry-select');
+                    if (select) select.value = enquiryType;
+                }
+                });
+            </script>
+
 
 	</body>
 </html>

@@ -37,5 +37,29 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
-  
+
+  document.querySelectorAll('.service-section .button').forEach(button => {
+    button.addEventListener('click', function (e) {
+      const section = this.closest('.service-section');
+      const sectionId = section?.id;
+
+      if (sectionId) {
+        const enquiryMap = {
+          logbook: 'logbook',
+          roadworthy: 'roadworthy',
+          brakes: 'brake',
+          steering: 'tyres',
+          clutch: 'clutch',
+          cooling: 'radiators',
+          aircon: 'aircon',
+          diagnostics: 'diagnostics',
+          tyres: 'tyresOnly',
+          others: 'otherServices'
+        };
+
+        const mappedValue = enquiryMap[sectionId] || 'general';
+        this.setAttribute('href', `contact-us.html?enquiry=${mappedValue}`);
+      }
+    });
+  }); 
   
