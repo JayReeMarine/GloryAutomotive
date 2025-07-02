@@ -36,9 +36,8 @@
 					<ul>
 						<li><a href="index.html">Home</a></li>
                         <li><a href="about-us.html">About Us</a></li>
-						<li><a href="#" onclick="return false;">Services</a></li>
+						<li><a href="services.html">Services</a></li>
                         <li class="current"><a href="contact-us.html">Contact Us</a></li>
-						<li><a href="#" onclick="return false;">Q&A</a></li>
 					</ul>
 				</nav>
 
@@ -90,7 +89,7 @@
                     <input type="date" name="date">
                     </div>
                     <div class="form-row">
-                        <select name="enquiry" required>
+                        <select id="enquiry-select" name="enquiry" required>
                             <option value="">Select Enquiry Type *</option>
                             <option value="general">General Enquiry</option>
                             <option value="logbook">Logbook Servicing</option>
@@ -138,11 +137,10 @@
                 <div class="footer-section">
                     <h2 class="footer-title">USEFUL LINKS</h2>
                     <ul class="footer-links">
-                    <li><a href="#" onclick="return false;">Home</a></li>
-                    <li><a href="#" onclick="return false;">About Us</a></li>
-                    <li><a href="#" onclick="return false;">Services</a></li>
-                    <li><a href="#" onclick="return false;">Contact Us</a></li>
-                    <li><a href="#" onclick="return false;">Q&A</a></li>
+                    <li><a href="index.html"">Home</a></li>
+                    <li><a href="about-us.html"">About Us</a></li>
+                    <li><a href="services.html"">Services</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
                     </ul>
                 </div>
         
@@ -159,6 +157,19 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+            <script src="assets/js/services.js"></script>
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                const params = new URLSearchParams(window.location.search);
+                const enquiryType = params.get('enquiry');
+
+                if (enquiryType) {
+                    const select = document.getElementById('enquiry-select');
+                    if (select) select.value = enquiryType;
+                }
+                });
+            </script>
+
 
 	</body>
 </html>
