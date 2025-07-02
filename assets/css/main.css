@@ -3297,7 +3297,7 @@ input, select, textarea {
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
-		margin-bottom: 4em;
+		margin-bottom: 6em;
 		scroll-margin-top: 100px;
 	}
 	.service-section img {
