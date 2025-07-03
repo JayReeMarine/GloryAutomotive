@@ -128,3 +128,30 @@
 
 
 })(jQuery);
+
+
+document.addEventListener('DOMContentLoaded', () => {
+	const serviceMap = {
+	  "Logbook Servicing": "logbook",
+	  "Roadworthy Inspections": "roadworthy",
+	  "Brake Repairs": "brakes",
+	  "Tyres, Steering & Suspension": "steering",
+	  "Clutch & Transmission": "clutch",
+	  "Radiators & Cooling": "cooling",
+	  "Air Conditioning": "aircon",
+	  "Diagnostics and Auto Electrical": "diagnostics",
+	  "Tyres": "tyres",
+	  "Other Services": "others"
+	};
+  
+	document.querySelectorAll('.service-card').forEach(card => {
+	  card.addEventListener('click', () => {
+		const title = card.querySelector('h3')?.innerText.trim();
+		const id = serviceMap[title] || '';
+		if (id) {
+		  window.location.href = `services.html#${id}`;
+		}
+	  });
+	});
+  });
+  

@@ -63,3 +63,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }); 
   
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const hash = window.location.hash;
+  
+    if (hash) {
+      const targetSection = document.querySelector(hash);
+      if (targetSection) {
+        setTimeout(() => {
+          targetSection.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+          });
+        }, 500); 
+      }
+    }
+  });
+  
