@@ -48,17 +48,17 @@ document.addEventListener('DOMContentLoaded', () => {
           logbook: 'logbook',
           roadworthy: 'roadworthy',
           brakes: 'brake',
-          steering: 'tyres',
+          steering: 'steering-suspension',
           clutch: 'clutch',
           cooling: 'radiators',
           aircon: 'aircon',
           diagnostics: 'diagnostics',
-          tyres: 'tyresOnly',
+          tyres: 'tyres',
           others: 'otherServices'
         };
 
         const mappedValue = enquiryMap[sectionId] || 'general';
-        this.setAttribute('href', `contact-us.html?enquiry=${mappedValue}`);
+        this.setAttribute('href', `contact-us.html?enquiry=${mappedValue}#enquiry-form`);
       }
     });
   }); 
