@@ -5,7 +5,6 @@ This is a web development project to redesign the website of a local business in
 ## Project Contributors
 
 - **Jaeyun**
-- **Michael**
 
 We collaboratively initiated and completed the entire project process.
 
@@ -24,4 +23,4 @@ We collaboratively initiated and completed the entire project process.
 
 ## Live Website
 
-[https://jayreemarine.github.io/Mechanic-Workshop-Page/](https://jayreemarine.github.io/Mechanic-Workshop-Page/)
+[https://jayreemarine.github.io/GloryAutomotive/](https://jayreemarine.github.io/GloryAutomotive/)
