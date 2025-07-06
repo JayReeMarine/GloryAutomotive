@@ -79,14 +79,14 @@
   
             
                 <!-- Contact Form BELOW -->
-                <form class="contact-form">
+                <form id="enquiry-form" class="contact-form">
                     <div class="form-row">
                     <input type="text" name="name" placeholder="Name *" required>
-                    <input type="email" name="email" placeholder="E-Mail *" required>
+                    <input type="email" name="email" id="email" placeholder="E-Mail *" required>
                     </div>
                     <div class="form-row">
                     <input type="text" name="phone" placeholder="Phone Number *" required>
-                    <input type="date" name="date">
+                    <input type="date" name="date" id="booking-date">
                     </div>
                     <div class="form-row">
                         <select id="enquiry-select" name="enquiry" required>
@@ -95,12 +95,12 @@
                             <option value="logbook">Logbook Servicing</option>
                             <option value="roadworthy">Roadworthy Inspections</option>
                             <option value="brake">Brake Repairs</option>
-                            <option value="tyres">Tyres, Steering & Suspension</option>
+                            <option value="steering-suspension">Steering & Suspension</option>
                             <option value="clutch">Clutch & Transmission</option>
                             <option value="radiators">Radiators & Cooling</option>
                             <option value="aircon">Air Conditioning</option>
                             <option value="diagnostics">Diagnostics and Auto Electrical</option>
-                            <option value="tyresOnly">Tyres</option>
+                            <option value="tyres">Tyres</option> 
                             <option value="otherServices">Other Services</option>
                             <option value="etc">ETC</option>
                           </select>
@@ -158,6 +158,7 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
             <script src="assets/js/services.js"></script>
+            <script src="assets/js/contact.js"></script>
             <script>
                 document.addEventListener('DOMContentLoaded', function () {
                 const params = new URLSearchParams(window.location.search);
@@ -169,6 +170,11 @@
                 }
                 });
             </script>
+            <script src="assets/js/scrollToTop.js"></script>
+			
+	<button class="scrollToTopBtn" title="Scroll to top">
+		<i class="fas fa-chevron-up"></i>
+	</button>
 
 
 	</body>
