@@ -107,7 +107,10 @@
                     </div>
                     <div class="form-row">
                     <textarea name="message" rows="6" placeholder="Message *" required></textarea>
+                    <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
                     </div>
+                    
+
                     <button type="submit" class="button contact-button">Submit</button>
                 </form>
                 </div>
@@ -159,18 +162,13 @@
 			<script src="assets/js/main.js"></script>
             <script src="assets/js/services.js"></script>
             <script src="assets/js/contact.js"></script>
+            <!-- EmailJS -->
+            <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
             <script>
-                document.addEventListener('DOMContentLoaded', function () {
-                const params = new URLSearchParams(window.location.search);
-                const enquiryType = params.get('enquiry');
-
-                if (enquiryType) {
-                    const select = document.getElementById('enquiry-select');
-                    if (select) select.value = enquiryType;
-                }
-                });
+            (function () {
+                emailjs.init("JayReeMarine");
+            })();
             </script>
-            <script src="assets/js/scrollToTop.js"></script>
 			
 	<button class="scrollToTopBtn" title="Scroll to top">
 		<i class="fas fa-chevron-up"></i>
