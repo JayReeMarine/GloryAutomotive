@@ -33,6 +33,15 @@ document.addEventListener('DOMContentLoaded', function () {
     if (dateInput) {
       dateInput.setAttribute("min", today);
     }
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const enquiryValue = urlParams.get('enquiry');
+    if (enquiryValue) {
+      const enquirySelect = document.getElementById('enquiry-select');
+      if (enquirySelect) {
+        enquirySelect.value = enquiryValue;
+      }
+    }
   
     const form = document.getElementById("enquiry-form");
     const emailInput = document.getElementById("email");

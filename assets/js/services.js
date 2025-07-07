@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         const mappedValue = enquiryMap[sectionId] || 'general';
-        this.setAttribute('href', `contact-us.html?enquiry=${mappedValue}#enquiry-form`);
+        this.setAttribute('href', `../contact-us/index.html?enquiry=${mappedValue}#enquiry-form`);
       }
     });
   }); 
