@@ -2339,7 +2339,7 @@ input, select, textarea {
 		font-family: 'Roboto', sans-serif;
 		font-weight: 700;
 		text-transform: uppercase;
-		padding: 0.em 0;
+		padding: 30px 20px;
 		background: #fff;
 		margin: 0 auto;
 		position: relative;
@@ -2356,6 +2356,7 @@ input, select, textarea {
 				justify-content: flex-end; 
 				align-items: center;
 				gap: 10px; 
+				padding: 10px 20px;
 			}
 
 			#header .logo div.logo-right {
@@ -2366,8 +2367,9 @@ input, select, textarea {
 			}
 
 			#header .logo div.logo-left img{
-				max-width: 140px;
-				height:auto;
+				width: auto;
+				height: 50px; /* 원하는 높이로 설정 (예: 70px 또는 80px) */
+				object-fit: contain; /* 비율 유지하며 잘리지 않게 */
 			}
 
 			#header .logo div.logo-right a {
