@@ -3562,21 +3562,23 @@ input, select, textarea {
 				top: 0;
 				width: 100%;
 				z-index: 10001;
-				background-color: rgba(21, 38, 23, 0.8);
-				background-image: url("images/overlay.png");
+				background-color: #023247 !important;
+				background-image: none !important;
+				box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 			}
 
 				#titleBar .title {
 					display: block;
 					position: relative;
-					font-family: 'Playfair Display', serif;
+					font-family: 'Lato', sans-serif;
 					font-weight: 700;
 					text-transform: uppercase;
-					font-size: 1.25em;
+					font-size: 1.3em;
 					line-height: 44px;
 					color: #fff;
 					z-index: 1000;
 					text-align: center;
+					letter-spacing: 1px;
 				}
 
 				#titleBar .toggle {
@@ -3598,8 +3600,11 @@ input, select, textarea {
 						text-rendering: auto;
 						line-height: 1;
 						text-transform: none !important;
+						background: #007BFF;
+						font-size: 20px;
 						font-family: 'Font Awesome 5 Free';
 						font-weight: 900;
+						transition: background-color 0.3s ease;
 					}
 
 					#titleBar .toggle:before {
@@ -3608,7 +3613,7 @@ input, select, textarea {
 						position: absolute;
 						left: 0;
 						top: 0;
-						background: #b1ddab;
+						background: #222831;
 						width: 44px;
 						height: 44px;
 						content: '\f0c9';
@@ -3619,7 +3624,7 @@ input, select, textarea {
 					}
 
 					#titleBar .toggle:active:before {
-						background-color: #a1cd9b;
+						background-color: #0056b3;
 					}
 
 			#navPanel {
@@ -3643,18 +3648,15 @@ input, select, textarea {
 				top: 0;
 				width: 275px;
 				z-index: 10002;
-				background-color: #353c37;
-				background-image: url("images/overlay.png"), -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
-				background-image: url("images/overlay.png"), -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
-				background-image: url("images/overlay.png"), -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
-				background-image: url("images/overlay.png"), linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+				background-color: #222831;
+				background-image: none !important;
 				background-repeat: repeat, no-repeat;
 				background-size: auto, 100% 100%;
-				font-family: 'Playfair Display', serif;
+				font-family: 'Lato', sans-serif;
 				font-weight: 700;
 				text-transform: uppercase;
 				font-size: 1.25em;
-				box-shadow: inset -3px 0px 10px 0px rgba(0, 0, 0, 0.25);
+				box-shadow: inset -2px 0px 8px rgba(0, 0, 0, 0.3);
 			}
 
 				#navPanel nav {
@@ -3664,15 +3666,15 @@ input, select, textarea {
 
 				#navPanel .link {
 					display: block;
-					color: inherit;
+					color: rgba(255, 255, 255, 0.8);
 					text-decoration: none;
 					height: 44px;
 					line-height: 44px;
-					padding: 0 1em 0 1em;
+					padding-left: 1.5em;
 					color: #888;
 					color: rgba(255, 255, 255, 0.5);
-					border-top: solid 2px rgba(87, 93, 89, 0.15);
-					font-size: 0.8em;
+					border-top: 1px solid rgba(255, 255, 255, 0.1);
+					font-size: 0.9em;
 				}
 
 					#navPanel .link:first-child {
@@ -3736,7 +3738,6 @@ input, select, textarea {
 	@media screen and (max-width: 736px) {
 
 		/* Basic */
-
 			body, input, textarea, select {
 				font-size: 11pt;
 			}

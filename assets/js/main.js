@@ -43,13 +43,14 @@
 	// Nav.
 
 		// Title Bar.
+			var logoHtml = $('#logo').html() || 'GLORY AUTO';
+
 			$(
-				'<div id="titleBar">' +
-					'<a href="#navPanel" class="toggle"></a>' +
-					'<span class="title">' + $('#logo').html() + '</span>' +
-				'</div>'
-			)
-				.appendTo($body);
+			'<div id="titleBar">' +
+				'<a href="#navPanel" class="toggle"></a>' +
+				'<span class="title">' + logoHtml + '</span>' +
+			'</div>'
+			).appendTo($body);
 
 		// Panel.
 			$(
