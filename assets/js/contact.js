@@ -52,13 +52,21 @@ document.addEventListener('DOMContentLoaded', function () {
       const emailValue = emailInput.value.trim();
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   
-
+      // Step 1: Email validation
       if (!emailRegex.test(emailValue)) {
         alert("Please enter a valid email address (e.g. yourname@example.com)");
         emailInput.focus();
         return;
       }
 
+      // ✅ Step 2: reCAPTCHA validation
+      const recaptchaResponse = document.querySelector('[name="g-recaptcha-response"]').value;
+      if (!recaptchaResponse) {
+        alert("⚠️ Please complete the reCAPTCHA before submitting.");
+        return;
+      }
+
+      // Step 3: Send with EmailJS
       emailjs
         .sendForm("service_0cmqs4l", "template_uannx6t", this)
         .then(() => {
