@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', function () {
     form.addEventListener('submit', function (e) {
       const emailValue = emailInput.value.trim(); // Get and trim the email value
       const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Simple pattern to match a valid email format
-  
       // Step 1: Check if the email format is valid
       if (!emailRegex.test(emailValue)) {
         e.preventDefault(); // Prevent the form from submitting
@@ -64,6 +63,18 @@ document.addEventListener('DOMContentLoaded', function () {
       if (!recaptchaResponse) {
         alert("⚠️ Please complete the reCAPTCHA before submitting.");
         return;
+      }
+      // ✅ Step 3: Format and inject preferred date
+      const bookingDateInput = document.getElementById("booking-date");
+      const preferredDateInput = document.getElementById("preferred-date");
+
+      if (bookingDateInput && preferredDateInput && bookingDateInput.value) {
+        const rawDate = bookingDateInput.value; // e.g. "2025-07-07"
+        const dateObj = new Date(rawDate);
+        const formattedDate = dateObj.toLocaleDateString("en-GB"); // "27/07/2025"
+        const formattedDash = formattedDate.replaceAll("/", "-");  // "27-07-2025"
+        preferredDateInput.value = formattedDate; 
+        document.getElementById("preferred-date-dash").value = formattedDash; 
       }
 
       // Step 3: Send with EmailJS
