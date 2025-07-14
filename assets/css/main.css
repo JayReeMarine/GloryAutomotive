@@ -3737,6 +3737,258 @@ input, select, textarea {
 
 	@media screen and (max-width: 736px) {
 
+		#banner .content {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			width: 100% !important;
+			padding: 2em 1em;
+			text-align: center;
+		}
+		
+		  #banner .left-layout {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			width: 100% !important;
+			padding: 0 !important;
+			margin: 0 auto !important;
+			text-align: center !important;
+		}
+			#banner .left-layout p {
+				display: none;
+			}
+		
+			#banner .left-layout h2 {
+				width: 100%;
+				max-width: 90%;
+				margin: 0 auto 1em auto !important;
+				text-align: center !important;
+				font-size: 3em !important;
+				word-break: keep-all; 
+				line-height: 1.2em;
+			}
+		
+
+		  .right-layout,
+		  .right-layout img,
+		  .arrow-icon {
+			display: none !important;
+		  }
+
+		  .button.scrolly {
+			display: block;
+			width: 90%;
+			padding: 1em 0;
+			margin: 1.5em auto 2.5em auto;
+			font-size: 1.4em;
+			border-radius: 10px;
+			text-align: center;
+		}
+
+		.service-grid {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);  
+			gap: 1.2em;
+			padding: 0 1em;
+		  }
+		
+		  .service-card img {
+			height: 140px; 
+		  }
+		
+		  .service-card h3 {
+			font-size: 1em;
+			word-break: keep-all; 
+		  }
+		
+		  #services-section-h2 {
+			font-size: 2em;
+			margin-bottom: 1em;
+			padding: 0 1em;
+		  }
+		
+		  .learn-more-wrapper {
+			margin-top: 2em;
+		  }
+		
+		  .button.large {
+			font-size: 1.1em;
+			padding: 0.8em 1.2em;
+			width: 90%;
+		  }
+		
+		  .brand-section,
+		  .brand-container,
+		  .brand-logos,
+		  .brand-arrow {
+			display: none !important;
+		  }
+		
+		  .extra-services {
+			display: none !important;
+		  }
+
+		  #contact-section .map-frame iframe {
+			height: 160px !important;    
+			max-width: 100%;
+		  }
+		
+		  #contact-section .contact-button {
+			width: 90%;
+			margin: 1.5em auto;
+			display: block;
+			font-size: 1.2em;
+			padding: 0.8em 1em;
+		  }
+		
+		  #contact-section .contact-info {
+			flex-direction: column;
+			gap: 1em;
+			padding: 0;
+		  }
+		
+		  #contact-section p {
+			font-size: 1em;
+			padding: 0 1em;
+		  }
+
+		  .partner-grid {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 1.2em;
+			padding: 0 1em;
+		}
+		
+		.partner-card {
+			background: #fff;
+			border-radius: 12px;
+			text-align: center;
+			padding: 1em 0.5em;
+			box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+			transition: transform 0.2s ease-in-out;
+			text-decoration: none;
+			color: inherit;
+		}
+		
+		.partner-card:hover {
+			transform: translateY(-5px);
+		}
+		
+		.partner-card img {
+			width: 100%;
+			height: 100px;
+			object-fit: contain;
+			margin-bottom: 0.6em;
+		}
+		
+		.partner-card h3 {
+			font-size: 1em;
+			word-break: keep-all;
+			text-decoration: underline;
+			color: #333;
+		}
+
+		.custom-footer {
+			background-color: #000;
+			color: #fff;
+			padding: 5em 2em;
+			font-family: 'Roboto', sans-serif;
+			text-align: center;
+		  }
+		  
+		  .footer-inner {
+			max-width: 1000px;
+			margin: 0 auto;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+		  }
+		  
+		  .footer-section {
+			width: 100%;
+			margin-bottom: 3em;
+		  }
+		  
+		  .footer-title {
+			font-size: 2em;
+			font-weight: 700;
+			margin-bottom: 1em;
+			text-align: center;
+		  }
+		  
+		  .footer-contact,
+		  .footer-links {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		  }
+		  
+		  .footer-contact li,
+		  .footer-links li {
+			font-size: 1em;
+			margin-bottom: 1em;
+			display: flex;
+			align-items: flex-start;
+			justify-content: center;
+			gap: 0.6em;
+			line-height: 1.6;
+			text-align: left;
+			flex-wrap: wrap;
+		  }
+		  
+		  .footer-contact li i,
+		  .footer-links li i {
+			font-size: 1.2em;
+			margin-top: 0.2em;
+		  }
+		  
+		  /* 시간을 나타내는 아이콘 항목만 따로 처리 */
+		  .footer-contact li:nth-child(4) {
+			flex-direction: row;
+			align-items: flex-start;
+			justify-content: center;
+			text-align: left;
+			gap: 0.6em;
+			flex-wrap: wrap;
+		  }
+		  
+		  /* 시간 아이콘 */
+		  .footer-contact li:nth-child(4) i {
+			display: inline-block;
+			font-size: 1.2em;
+			margin-top: 0.2em;
+		  }
+		  
+		  /* 시간 텍스트 */
+		  .footer-contact li:nth-child(4) span {
+			display: inline-block;
+			line-height: 1.4;
+		  }
+		  
+		  /* "Closed on public holidays" 문구만 아래 줄에 */
+		  .footer-contact li:nth-child(4) small {
+			display: block;
+			margin-top: 0.4em;
+			font-size: 0.9em;
+			color: #aaa;
+		  }
+
+		  
+		  /* "Closed on public holidays" 스타일 */
+		  .footer-contact small {
+			display: block;
+			margin-top: 0.8em;
+			font-size: 0.9em;
+			color: #aaa;
+			text-align: center;
+		  }
+
+
+		  
 		/* Basic */
 			body, input, textarea, select {
 				font-size: 11pt;
@@ -3831,24 +4083,6 @@ input, select, textarea {
 				font-size: 1.25em;
 			}
 
-		/* Banner */
-
-			#banner {
-				padding: calc(6em + 44px) 0 6em 0;
-			}
-
-				#banner .content {
-					padding: 4em 2.5em 3em 2.5em;
-				}
-
-					#banner .content h2 {
-						font-size: 2em;
-					}
-
-					#banner .content p {
-						font-size: 1.25em;
-					}
-
 		/* Main */
 
 			#main {
@@ -3878,7 +4112,7 @@ input, select, textarea {
 				line-height: 1.75em;
 			}
 
-	}
+	
 	
 	/* keyboard :focus */
 	a:focus,
@@ -3913,4 +4147,5 @@ input, select, textarea {
 	input:-webkit-autofill:focus {
 		border: 3px solid #0077cc !important;
 		box-shadow: 0 0 0 3px rgba(0, 119, 204, 0.3) !important;
+		background-color: #e6f7ff !important;
 	  }
