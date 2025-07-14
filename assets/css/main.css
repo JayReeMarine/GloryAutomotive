@@ -3790,18 +3790,18 @@ input, select, textarea {
 
 		.service-grid {
 			display: grid;
-			grid-template-columns: repeat(2, 1fr);  /* 모바일은 2열 */
+			grid-template-columns: repeat(2, 1fr);  
 			gap: 1.2em;
 			padding: 0 1em;
 		  }
 		
 		  .service-card img {
-			height: 140px; /* 이미지 높이도 모바일용으로 줄이기 */
+			height: 140px; 
 		  }
 		
 		  .service-card h3 {
 			font-size: 1em;
-			word-break: keep-all; /* 줄바꿈 방지 */
+			word-break: keep-all; 
 		  }
 		
 		  #services-section-h2 {
@@ -3820,8 +3820,6 @@ input, select, textarea {
 			width: 90%;
 		  }
 		
-		
-
 		  .brand-section,
 		  .brand-container,
 		  .brand-logos,
@@ -3833,6 +3831,68 @@ input, select, textarea {
 			display: none !important;
 		  }
 
+		  #contact-section .map-frame iframe {
+			height: 160px !important;    
+			max-width: 100%;
+		  }
+		
+		  #contact-section .contact-button {
+			width: 90%;
+			margin: 1.5em auto;
+			display: block;
+			font-size: 1.2em;
+			padding: 0.8em 1em;
+		  }
+		
+		  #contact-section .contact-info {
+			flex-direction: column;
+			gap: 1em;
+			padding: 0;
+		  }
+		
+		  #contact-section p {
+			font-size: 1em;
+			padding: 0 1em;
+		  }
+
+		  .partner-grid {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 1.2em;
+			padding: 0 1em;
+		}
+		
+		.partner-card {
+			background: #fff;
+			border-radius: 12px;
+			text-align: center;
+			padding: 1em 0.5em;
+			box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+			transition: transform 0.2s ease-in-out;
+			text-decoration: none;
+			color: inherit;
+		}
+		
+		.partner-card:hover {
+			transform: translateY(-5px);
+		}
+		
+		.partner-card img {
+			width: 100%;
+			height: 100px;
+			object-fit: contain;
+			margin-bottom: 0.6em;
+		}
+		
+		.partner-card h3 {
+			font-size: 1em;
+			word-break: keep-all;
+			text-decoration: underline;
+			color: #333;
+		}
+
+
+		  
 		/* Basic */
 			body, input, textarea, select {
 				font-size: 11pt;
@@ -3991,4 +4051,5 @@ input, select, textarea {
 	input:-webkit-autofill:focus {
 		border: 3px solid #0077cc !important;
 		box-shadow: 0 0 0 3px rgba(0, 119, 204, 0.3) !important;
+		background-color: #e6f7ff !important;
 	  }
