@@ -3891,6 +3891,102 @@ input, select, textarea {
 			color: #333;
 		}
 
+		.custom-footer {
+			background-color: #000;
+			color: #fff;
+			padding: 5em 2em;
+			font-family: 'Roboto', sans-serif;
+			text-align: center;
+		  }
+		  
+		  .footer-inner {
+			max-width: 1000px;
+			margin: 0 auto;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+		  }
+		  
+		  .footer-section {
+			width: 100%;
+			margin-bottom: 3em;
+		  }
+		  
+		  .footer-title {
+			font-size: 2em;
+			font-weight: 700;
+			margin-bottom: 1em;
+			text-align: center;
+		  }
+		  
+		  .footer-contact,
+		  .footer-links {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		  }
+		  
+		  .footer-contact li,
+		  .footer-links li {
+			font-size: 1em;
+			margin-bottom: 1em;
+			display: flex;
+			align-items: flex-start;
+			justify-content: center;
+			gap: 0.6em;
+			line-height: 1.6;
+			text-align: left;
+			flex-wrap: wrap;
+		  }
+		  
+		  .footer-contact li i,
+		  .footer-links li i {
+			font-size: 1.2em;
+			margin-top: 0.2em;
+		  }
+		  
+		  /* 시간을 나타내는 아이콘 항목만 따로 처리 */
+		  .footer-contact li:nth-child(4) {
+			flex-direction: row;
+			align-items: flex-start;
+			justify-content: center;
+			text-align: left;
+			gap: 0.6em;
+			flex-wrap: wrap;
+		  }
+		  
+		  /* 시간 아이콘 */
+		  .footer-contact li:nth-child(4) i {
+			display: inline-block;
+			font-size: 1.2em;
+			margin-top: 0.2em;
+		  }
+		  
+		  /* 시간 텍스트 */
+		  .footer-contact li:nth-child(4) span {
+			display: inline-block;
+			line-height: 1.4;
+		  }
+		  
+		  /* "Closed on public holidays" 문구만 아래 줄에 */
+		  .footer-contact li:nth-child(4) small {
+			display: block;
+			margin-top: 0.4em;
+			font-size: 0.9em;
+			color: #aaa;
+		  }
+
+		  
+		  /* "Closed on public holidays" 스타일 */
+		  .footer-contact small {
+			display: block;
+			margin-top: 0.8em;
+			font-size: 0.9em;
+			color: #aaa;
+			text-align: center;
+		  }
+
 
 		  
 		/* Basic */
