@@ -3787,6 +3787,38 @@ input, select, textarea {
 			border-radius: 10px;
 			text-align: center;
 		}
+
+		.service-grid {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);  /* 모바일은 2열 */
+			gap: 1.2em;
+			padding: 0 1em;
+		  }
+		
+		  .service-card img {
+			height: 140px; /* 이미지 높이도 모바일용으로 줄이기 */
+		  }
+		
+		  .service-card h3 {
+			font-size: 1em;
+			word-break: keep-all; /* 줄바꿈 방지 */
+		  }
+		
+		  #services-section-h2 {
+			font-size: 2em;
+			margin-bottom: 1em;
+			padding: 0 1em;
+		  }
+		
+		  .learn-more-wrapper {
+			margin-top: 2em;
+		  }
+		
+		  .button.large {
+			font-size: 1.1em;
+			padding: 0.8em 1.2em;
+			width: 90%;
+		  }
 		
 		
 
